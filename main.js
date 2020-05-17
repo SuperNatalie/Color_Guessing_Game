@@ -26,7 +26,7 @@ divFour.style.background = randomRGB();
 divFive.style.background = randomRGB();
 
 
-const correct = Math.floor(Math.random()* 5);
+const correct = Math.floor(Math.random()* 5+1);
 console.log(correct);
 
 divOne.innerHTML = wrongChoiceHTML;
@@ -39,7 +39,6 @@ divFive.innerHTML = wrongChoiceHTML;
 
 function guesswhat() {
     if (correct === 1) {
-        
         guess.innerHTML +=  divOne.style.background + " is.";
         divOne.innerHTML = rightChoiceHTML;
     } else if (correct === 2) {
@@ -67,7 +66,7 @@ function rightChoice() {
 }
 
 function wrongChoice() {
-    ergebnis.innerHTML = "Leider Falsch. Versuche es noch einmal.";
+    ergebnis.innerHTML = "Leider falsch. Versuche es noch einmal.";
 }
 
 function reset() {
