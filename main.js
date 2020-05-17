@@ -6,7 +6,8 @@ let divThree = document.getElementById("three");
 let divFour = document.getElementById("four");
 let divFive = document.getElementById("five");
 let guess = document.getElementById("rgb");
-let rightChoiceHTML = `<div id="one" onclick="rightChoice()"></div>`; 
+let rightChoiceHTML = `<div onclick="rightChoice()"></div>`; 
+let wrongChoiceHTML = `<div onclick="wrongChoice()"></div>`; 
 
 
 function randomNumber() {
@@ -26,30 +27,36 @@ divFour.style.background = randomRGB();
 divFive.style.background = randomRGB();
 
 
-console.log(divOne.style.background)
-
 
 const correct = Math.floor(Math.random()*5);
 console.log(correct);
 
 
+divOne.innerHTML = wrongChoiceHTML;
+divTwo.innerHTML = wrongChoiceHTML;
+divThree.innerHTML = wrongChoiceHTML;
+divFour.innerHTML = wrongChoiceHTML;
+divFive.innerHTML = wrongChoiceHTML;
+
+
+
 function guesswhat() {
     if (correct === 1) {
-        guess.innerHTML += divOne.style.background + " is.";
+        guess.innerHTML += randomRGB() + " is.";
         divOne.innerHTML = rightChoiceHTML;
     } else if (correct === 2) {
-        guess.innerHTML += divTwo.style.background + " is.";
+        guess.innerHTML += randomRGB() + " is.";
         divTwo.innerHTML = rightChoiceHTML;
     } else if (correct === 3) {
-        guess.innerHTML += divThree.style.background + " is.";
+        guess.innerHTML += randomRGB() + " is.";
         divThree.innerHTML = rightChoiceHTML;
     } else if (correct === 4) {
-        guess.innerHTML += divFour.style.background + " is.";
+        guess.innerHTML += randomRGB() + " is.";
         divFour.innerHTML = rightChoiceHTML;
     } else if (correct === 5) {
-        guess.innerHTML += divFive.style.background + " is.";
+        guess.innerHTML += randomRGB() + " is.";
         divFive.innerHTML = rightChoiceHTML;
-    } 
+    }  
 }
 
 console.log(divOne.innerHTML);
