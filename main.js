@@ -19,7 +19,6 @@ function randomRGB() {
 }
 
 
-
 divOne.style.background = randomRGB();
 divTwo.style.background = randomRGB();
 divThree.style.background = randomRGB();
@@ -27,10 +26,8 @@ divFour.style.background = randomRGB();
 divFive.style.background = randomRGB();
 
 
-
 const correct = Math.floor(Math.random()* 5);
 console.log(correct);
-
 
 divOne.innerHTML = wrongChoiceHTML;
 divTwo.innerHTML = wrongChoiceHTML;
@@ -42,19 +39,20 @@ divFive.innerHTML = wrongChoiceHTML;
 
 function guesswhat() {
     if (correct === 1) {
-        guess.innerHTML += randomRGB() + " is.";
+        
+        guess.innerHTML +=  divOne.style.background + " is.";
         divOne.innerHTML = rightChoiceHTML;
     } else if (correct === 2) {
-        guess.innerHTML += randomRGB() + " is.";
+        guess.innerHTML += divTwo.style.background + " is.";
         divTwo.innerHTML = rightChoiceHTML;
     } else if (correct === 3) {
-        guess.innerHTML += randomRGB() + " is.";
+        guess.innerHTML += divThree.style.background + " is.";
         divThree.innerHTML = rightChoiceHTML;
     } else if (correct === 4) {
-        guess.innerHTML += randomRGB() + " is.";
+        guess.innerHTML += divFour.style.background+ " is.";
         divFour.innerHTML = rightChoiceHTML;
     } else if (correct === 5) {
-        guess.innerHTML += randomRGB() + " is.";
+        guess.innerHTML += divFour.style.background + " is.";
         divFive.innerHTML = rightChoiceHTML;
     }  else {
         guess.innerHTML = "Ups, a little Bug... Please press Reset Me."
@@ -72,11 +70,6 @@ function wrongChoice() {
     ergebnis.innerHTML = "Leider Falsch. Versuche es noch einmal.";
 }
 
-
-
-
-
 function reset() {
     location.reload();
-   
 }
