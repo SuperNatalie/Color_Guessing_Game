@@ -1,5 +1,3 @@
-
-
 let divOne = document.getElementById("one");
 let divTwo = document.getElementById("two");
 let divThree = document.getElementById("three");
@@ -9,7 +7,6 @@ let guess = document.getElementById("rgb");
 let rightChoiceHTML = `<div onclick="rightChoice()"></div>`; 
 let wrongChoiceHTML = `<div onclick="wrongChoice()"></div>`; 
 
-
 function randomNumber() {
     return Math.floor(Math.random() * 256);
 }
@@ -18,13 +15,11 @@ function randomRGB() {
     return `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
 }
 
-
 divOne.style.background = randomRGB();
 divTwo.style.background = randomRGB();
 divThree.style.background = randomRGB();
 divFour.style.background = randomRGB();
 divFive.style.background = randomRGB();
-
 
 const correct = Math.floor(Math.random()* 5+1);
 console.log(correct);
@@ -34,8 +29,6 @@ divTwo.innerHTML = wrongChoiceHTML;
 divThree.innerHTML = wrongChoiceHTML;
 divFour.innerHTML = wrongChoiceHTML;
 divFive.innerHTML = wrongChoiceHTML;
-
-
 
 function guesswhat() {
     if (correct === 1) {
@@ -57,9 +50,7 @@ function guesswhat() {
         guess.innerHTML = "Ups, a little Bug... Please press Reset Me."
     }
 }
-
 guesswhat();
-
 
 function rightChoice() {
     ergebnis.innerHTML = "Gut gemacht. Das ist richtig!";
