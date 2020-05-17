@@ -1,0 +1,44 @@
+body {
+    background-color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2, p {
+    margin-left: 30px;
+}
+
+
+.parent-div {
+    margin-left: 20px;
+    display: flex;
+    width: 600px;
+    border: none;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.parent-div div:hover{
+    margin-top: 2px;
+}
+
+
+button {
+    margin-top: 30px;
+    margin-left: 280px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+    height: 40px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(167, 40, 160);
+    transform: scale(1.05);
+}
