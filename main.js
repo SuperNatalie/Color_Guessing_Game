@@ -51,7 +51,7 @@ function guesswhat() {
         guess.innerHTML += divFour.style.background+ " is.";
         divFour.innerHTML = rightChoiceHTML;
     } else if (correct === 5) {
-        guess.innerHTML += divFour.style.background + " is.";
+        guess.innerHTML += divFive.style.background + " is.";
         divFive.innerHTML = rightChoiceHTML;
     }  else {
         guess.innerHTML = "Ups, a little Bug... Please press Reset Me."
