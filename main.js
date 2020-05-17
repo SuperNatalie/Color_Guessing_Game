@@ -46,8 +46,6 @@ function guesswhat() {
     } else if (correct === 5) {
         guess.innerHTML += divFive.style.background + " is.";
         divFive.innerHTML = rightChoiceHTML;
-    }  else {
-        guess.innerHTML = "Ups, a little Bug... Please press Reset Me."
     }
 }
 guesswhat();
