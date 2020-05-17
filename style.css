@@ -8,6 +8,7 @@ body {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: none;
 
 }
 
@@ -27,12 +28,17 @@ p {
     display: flex;
     width: 600px;
     border: none;
+    box-shadow: none;
 }
 
 div {
     width: 100px;
     height: 100px;
     justify-content: space-around;
+    box-shadow:  6px 6px 18px #a7a8b6, 
+    -6px -6px 18px #e1e4f6;
+    border-radius: 50%;
+             
 }
 .parent-div div:hover{
     margin-top: 2px;
