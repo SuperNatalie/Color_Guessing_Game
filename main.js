@@ -28,7 +28,7 @@ divFive.style.background = randomRGB();
 
 
 
-const correct = Math.floor(Math.random()*5);
+const correct = Math.floor(Math.random()* 5);
 console.log(correct);
 
 
@@ -59,21 +59,15 @@ function guesswhat() {
     }  
 }
 
-console.log(divOne.innerHTML);
-
-
-
 guesswhat();
 
 
-
-
 function rightChoice() {
-    ergebnis.innerHTML = "Richtig!";
+    ergebnis.innerHTML = "Gut gemacht. Das ist richtig!";
 }
 
 function wrongChoice() {
-    ergebnis.innerHTML = "Leider Falsch.";
+    ergebnis.innerHTML = "Leider Falsch. Versuche es noch einmal.";
 }
 
 
