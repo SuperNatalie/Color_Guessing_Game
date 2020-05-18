@@ -8,46 +8,37 @@ body {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: none;
-
 }
 
 h2 {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 p {
-    margin-left: 30%;
+    margin-left: 150px;
 }
 
 
 .parent-div {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    margin-left: 20px;
     display: flex;
-    width: 600px;
+    width: 700px;
     border: none;
-    box-shadow: none;
 }
 
-div {
+.color {
+    margin-left: 10px;
     width: 100px;
     height: 100px;
-    justify-content: space-around;
-    box-shadow:  6px 6px 18px #a7a8b6, 
-    -6px -6px 18px #e1e4f6;
-    border-radius: 50%;
-             
+    border-radius: 50%;        
 }
-.parent-div div:hover{
+.parent-div .color:hover{
     margin-top: 2px;
 }
 
 
 button {
     margin-top: 5%;
-    margin-left: 280px;
+    margin-left: 240px;
     background-color: blueviolet;
     color: white;
     font-weight: bold;
@@ -69,7 +60,7 @@ button:hover {
     .parent-div {
         width: 400px;
     }
-    div {
+    .color {
         width: 70px;
         height: 70px;
     }

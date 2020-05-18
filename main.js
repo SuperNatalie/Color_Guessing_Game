@@ -4,8 +4,8 @@ let divThree = document.getElementById("three");
 let divFour = document.getElementById("four");
 let divFive = document.getElementById("five");
 let guess = document.getElementById("rgb");
-let rightChoiceHTML = `<div onclick="rightChoice()"></div>`; 
-let wrongChoiceHTML = `<div onclick="wrongChoice()"></div>`; 
+let rightChoiceHTML = `<div class="color" onclick="rightChoice()"></div>`; 
+let wrongChoiceHTML = `<div class="color" onclick="wrongChoice()"></div>`; 
 
 function randomNumber() {
     return Math.floor(Math.random() * 256);
