@@ -34,6 +34,7 @@ function guesswhat() {
     if (correct === 1) {
         guess.innerHTML +=  divOne.style.backgroundColor + " is.";
         divOne.innerHTML = rightChoiceHTML;
+
     } else if (correct === 2) {
         guess.innerHTML += divTwo.style.backgroundColor + " is.";
         divTwo.innerHTML = rightChoiceHTML;
