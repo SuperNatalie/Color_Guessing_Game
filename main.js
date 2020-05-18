@@ -15,11 +15,11 @@ function randomRGB() {
     return `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
 }
 
-divOne.style.background = randomRGB();
-divTwo.style.background = randomRGB();
-divThree.style.background = randomRGB();
-divFour.style.background = randomRGB();
-divFive.style.background = randomRGB();
+divOne.style.backgroundColor = randomRGB();
+divTwo.style.backgroundColor = randomRGB();
+divThree.style.backgroundColor = randomRGB();
+divFour.style.backgroundColor = randomRGB();
+divFive.style.backgroundColor = randomRGB();
 
 const correct = Math.floor(Math.random()* 5+1);
 console.log(correct);
@@ -32,19 +32,19 @@ divFive.innerHTML = wrongChoiceHTML;
 
 function guesswhat() {
     if (correct === 1) {
-        guess.innerHTML +=  divOne.style.background + " is.";
+        guess.innerHTML +=  divOne.style.backgroundColor + " is.";
         divOne.innerHTML = rightChoiceHTML;
     } else if (correct === 2) {
-        guess.innerHTML += divTwo.style.background + " is.";
+        guess.innerHTML += divTwo.style.backgroundColor + " is.";
         divTwo.innerHTML = rightChoiceHTML;
     } else if (correct === 3) {
-        guess.innerHTML += divThree.style.background + " is.";
+        guess.innerHTML += divThree.style.backgroundColor + " is.";
         divThree.innerHTML = rightChoiceHTML;
     } else if (correct === 4) {
-        guess.innerHTML += divFour.style.background+ " is.";
+        guess.innerHTML += divFour.style.backgroundColor+ " is.";
         divFour.innerHTML = rightChoiceHTML;
     } else if (correct === 5) {
-        guess.innerHTML += divFive.style.background + " is.";
+        guess.innerHTML += divFive.style.backgroundColor + " is.";
         divFive.innerHTML = rightChoiceHTML;
     }
 }
